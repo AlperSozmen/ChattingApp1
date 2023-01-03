@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.chattingapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_user2Fragment"
+            app:destination="@id/user2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/user2Fragment"
+        android:name="com.example.chattingapp.User2Fragment"
+        android:label="activity_user_2"
+        tools:layout="@layout/fragment_user_2" >
+    <action
+        android:id="@+id/action_user2Fragment_to_chat01Fragment"
+        app:destination="@id/chat01Fragment" />
+    <action
+        android:id="@+id/action_user2Fragment_to_chat02Fragment"
+        app:destination="@id/chat02Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.chattingapp.UserFragment"
+        android:label="activity_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_userFragment_to_chat2Fragment"
+            app:destination="@id/chat2Fragment" />
+        <action
+            android:id="@+id/action_userFragment_to_chat3Fragment"
+            app:destination="@id/chat3Fragment" />
+        <action
+            android:id="@+id/action_userFragment_to_chat4Fragment"
+            app:destination="@id/chat4Fragment" />
+        <action
+            android:id="@+id/action_userFragment_to_chat5Fragment"
+            app:destination="@id/chat5Fragment" />
+        <action
+            android:id="@+id/action_userFragment_to_chat6Fragment"
+            app:destination="@id/chat6Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.chattingapp.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/chat2Fragment"
+        android:name="com.example.chattingapp.Chat2Fragment"
+        android:label="fragment_chat_2"
+        tools:layout="@layout/fragment_chat_2" />
+    <fragment
+        android:id="@+id/chat3Fragment"
+        android:name="com.example.chattingapp.Chat3Fragment"
+        android:label="fragment_chat_3"
+        tools:layout="@layout/fragment_chat_3" />
+    <fragment
+        android:id="@+id/chat4Fragment"
+        android:name="com.example.chattingapp.Chat4Fragment"
+        android:label="fragment_chat_4"
+        tools:layout="@layout/fragment_chat_4" />
+    <fragment
+        android:id="@+id/chat5Fragment"
+        android:name="com.example.chattingapp.Chat5Fragment"
+        android:label="fragment_chat_5"
+        tools:layout="@layout/fragment_chat_5" />
+    <fragment
+        android:id="@+id/chat6Fragment"
+        android:name="com.example.chattingapp.Chat6Fragment"
+        android:label="fragment_chat_6"
+        tools:layout="@layout/fragment_chat_6" />
+    <fragment
+        android:id="@+id/chat01Fragment"
+        android:name="com.example.chattingapp.Chat01Fragment"
+        android:label="fragment_chat_01"
+        tools:layout="@layout/fragment_chat_01" />
+    <fragment
+        android:id="@+id/chat02Fragment"
+        android:name="com.example.chattingapp.Chat02Fragment"
+        android:label="fragment_chat_02"
+        tools:layout="@layout/fragment_chat_02" />
+</navigation>
+
